@@ -25,10 +25,4 @@ public class LoginSteps {
     public void input_user_with_password(String userName, String password) {
         loginActions.inputUserNameAndPassword(userName, password);
     }
-
-    @Then("verify user is able to see error message on the page")
-    public void verify_user_is_able_to_see_error_message_on_the_page() {
-        loginActions.verifyTheLookedOutMessageIsDisplayed();
-    }
-
 }
