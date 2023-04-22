@@ -25,4 +25,10 @@ public class LoginSteps {
     public void input_user_with_password(String userName, String password) {
         loginActions.inputUserNameAndPassword(userName, password);
     }
+
+    @Then("user is able to see error message with invalid credential")
+    public void user_is_able_to_see_error_message_with_invalid_credential() {
+        loginActions.verifyTheLookedOutMessageIsDisplayed();
+    }
+
 }
